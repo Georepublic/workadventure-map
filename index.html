@@ -16,12 +16,12 @@
                 if (path.endsWith('index.html')) {
                     path = path.substr(path, path.length - 'index.html'.length);
                 }
-                const url = 'https://play.workadventu.re/_/global/'+window.location.host+path+'map.json?alone=true';
+                const url = 'https://play.workadventu.re/_/global/'+window.location.host+path+'maps/example.json?alone=true';
                 document.getElementById('mapLink').href = url;
                 document.getElementById('mapLink2').href = url;
                 document.getElementById('mapLink').innerText = url;
 
-                const mapUrl = window.location.protocol+'//'+window.location.host+path+'map.json';
+                const mapUrl = window.location.protocol+'//'+window.location.host+path+'maps/example.json';
                 document.getElementById('mapUrl').innerText = mapUrl;
 
                 const gettingStartedLink = 'https://workadventu.re/getting-started?name=Map&mapUrl='+mapUrl;
